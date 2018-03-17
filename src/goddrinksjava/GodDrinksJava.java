@@ -94,7 +94,10 @@ public class GodDrinksJava {
 
         /* --------------- */
 
-        if (me.getSenseIndex("vibration")) {
+        // The original code has this like as:
+        // if (me.getSenseIndex("vibration")) {
+        // But the method name suggests that it's supposed to return an Integer which would not work with an if statement as-is
+        if (me.getSenseIndex("vibration") == -1) {
             me.addFeeling("complete");
         }
 
