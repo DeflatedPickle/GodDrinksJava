@@ -1,21 +1,13 @@
 package goddrinksjava;
 
-public class Fruit extends Thing {
+public interface Fruit {
     // Not sure what to return
-    public Object getNutrients() {
-        return "";
-    }
+    Object getNutrients();
 
-    public void resetNutrients() {
-
-    }
+    void resetNutrients();
 
     // Not sure what to return
-    public Object getAntioxidants() {
-        return "";
-    }
+    Object getAntioxidants();
 
-    public void resetAntioxidants() {
-
-    }
+    void resetAntioxidants();
 }

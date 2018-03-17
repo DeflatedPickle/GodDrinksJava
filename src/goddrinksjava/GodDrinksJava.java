@@ -82,5 +82,13 @@ public class GodDrinksJava {
         if (world.getGod().equals(me)) {
             me.setProof(you.toProof());
         }
+
+        /* --------------- */
+
+        me.toggleGender();
+        me.toggleRoleBDSM();
+
+        world.makeHigh(me);
+        world.makeHigh(you);
     }
 }

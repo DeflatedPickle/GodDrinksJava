@@ -1,4 +1,4 @@
 package goddrinksjava;
 
-public class Eggplant extends Fruit {
+public interface Eggplant extends Fruit {
 }

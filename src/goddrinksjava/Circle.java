@@ -1,12 +1,8 @@
 package goddrinksjava;
 
-public class Circle extends PointSet {
+public interface Circle extends PointSet {
     // Not sure what to return
-    public Object getCircumference() {
-        return "";
-    }
+    Object getCircumference();
 
-    public void resetCircumference() {
-
-    }
+    void resetCircumference();
 }

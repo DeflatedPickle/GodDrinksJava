@@ -1,6 +1,6 @@
 package goddrinksjava;
 
-public class Thing {
+public class Thing implements Circle, PointSet, SineWave, Sequence, Fruit {
     public void addAttribute() {
 
     }
@@ -11,8 +11,8 @@ public class Thing {
     }
 
     // Not sure what to return
-    public Object toLimit() {
-        return "";
+    public Integer toLimit() {
+        return 0;
     }
 
     public void toggleCurrent() {
@@ -34,5 +34,60 @@ public class Thing {
     // Not sure what to return
     public Object toProof() {
         return "";
+    }
+
+    // Not sure what to return
+    public Object toAttribute() {
+        return "";
+    }
+
+    /* ----- Circle ----- */
+
+    // Not sure what to return
+    public Object getCircumference() {
+        return "";
+    }
+
+    public void resetCircumference() {
+
+    }
+
+    /* ----- PointSet ----- */
+
+    // Not sure what to return
+    public Object getDimensions() {
+        return "";
+    }
+
+    public void resetDimentions() {
+
+    }
+
+    /* ----- SineWave ----- */
+
+    /* ----- Sequence ----- */
+
+    public void setLimit(Integer limit) {
+
+    }
+
+    /* ----- Fruit ----- */
+
+    // Not sure what to return
+    public Object getNutrients() {
+        return "";
+    }
+
+    public void resetNutrients() {
+
+    }
+
+    // Not sure what to return
+    public Object getAntioxidants() {
+        return "";
+    }
+
+    public void resetAntioxidants() {
+
     }
 }

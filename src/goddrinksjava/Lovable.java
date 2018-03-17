@@ -17,13 +17,12 @@ public class Lovable extends Thing {
 
     }
 
-    public void setSatisfaction() {
+    public void setSatisfaction(Integer level) {
 
     }
 
-    // Not sure what to return
-    public Object toSatisfaction() {
-        return "";
+    public Integer toSatisfaction() {
+        return 0;
     }
 
     public Integer getFeelingIndex(String feeling) {
@@ -31,6 +30,10 @@ public class Lovable extends Thing {
     }
 
     public void requestExecution(World world) {
+
+    }
+
+    public void toggleGender() {
 
     }
 }

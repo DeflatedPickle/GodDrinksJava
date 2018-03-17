@@ -36,4 +36,8 @@ public class World {
     public Lovable getGod() {
         return God;
     }
+
+    public void makeHigh(Thing height) {
+
+    }
 }

@@ -1,7 +1,5 @@
 package goddrinksjava;
 
-public class TabbyCat extends Thing {
-    public void purr() {
-
-    }
+public interface TabbyCat {
+    void purr();
 }

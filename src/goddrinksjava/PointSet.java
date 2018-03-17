@@ -1,17 +1,8 @@
 package goddrinksjava;
 
-public class PointSet extends Thing {
+public interface PointSet {
     // Not sure what to return
-    public Object getDimensions() {
-        return "";
-    }
+    Object getDimensions();
 
-    public void resetDimentions() {
-
-    }
-
-    // Not sure what to return
-    public Object toAttribute() {
-        return "";
-    }
+    void resetDimentions();
 }
