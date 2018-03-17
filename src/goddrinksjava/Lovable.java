@@ -36,4 +36,46 @@ public class Lovable extends Thing {
     public void toggleGender() {
 
     }
+
+    public void toggleRoleBDSM() {
+
+    }
+
+    public Integer getSenseIndex(String sense) {
+        return 0;
+    }
+
+    public void removeFeeling(String feeling) {
+
+    }
+
+    public void setOpinion(Object of, Boolean b) {
+
+    }
+
+    public Integer getOpinionIndex(String s) {
+        return 0;
+    }
+
+    public void setExecution(Object thing) {
+
+    }
+
+    // Not sure what to return
+    public Object toExecution() {
+        return "";
+    }
+
+    public void learnTopic(String topic) {
+
+    }
+
+    public void takeExamTopic(String topic) {
+
+    }
+
+    // Not sure what to return
+    public Object getAlgebraicExpression(String s) {
+        return "";
+    }
 }

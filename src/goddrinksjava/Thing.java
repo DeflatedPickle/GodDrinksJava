@@ -41,6 +41,19 @@ public class Thing implements Circle, PointSet, SineWave, Sequence, Fruit {
         return "";
     }
 
+    public void lookFor(Thing thing, World world) {
+
+    }
+
+    // Not sure what to return
+    public Object getMemory() {
+        return "";
+    }
+
+    public void escape(String... things) {
+
+    }
+
     /* ----- Circle ----- */
 
     // Not sure what to return

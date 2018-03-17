@@ -37,7 +37,39 @@ public class World {
         return God;
     }
 
+    public void procreate(Thing... things) {
+
+    }
+
     public void makeHigh(Thing height) {
+
+    }
+
+    public void unlock(Thing thing) {
+
+    }
+
+    public void removeThing(Thing thing) {
+
+    }
+
+    public void announce(String... s) {
+
+    }
+
+    public void runExecution() {
+
+    }
+
+    public Boolean isExecutableBy(Thing thing) {
+        return false;
+    }
+
+    public Integer getThingIndex(Thing thing) {
+        return 0;
+    }
+
+    public void execute(Thing thing) {
 
     }
 }
