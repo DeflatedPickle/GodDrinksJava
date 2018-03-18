@@ -1,10 +1,16 @@
 package goddrinksjava;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Thing implements Circle, PointSet, SineWave, Sequence, Fruit, TabbyCat {
     private Memory memory;
 
+    private List<String> senseList;
+
     public Thing() {
         memory = new Memory();
+        senseList = new ArrayList<>();
     }
 
     public void addAttribute(Attribute attribute) {
@@ -42,11 +48,6 @@ public class Thing implements Circle, PointSet, SineWave, Sequence, Fruit, Tabby
         return "";
     }
 
-    // Not sure what to return
-    public Object toAttribute() {
-        return "";
-    }
-
     public void lookFor(Thing thing, World world) {
 
     }
@@ -63,10 +64,12 @@ public class Thing implements Circle, PointSet, SineWave, Sequence, Fruit, Tabby
     /* ----- Circle ----- */
 
     // Not sure what to return
+    @Override
     public Circumference getCircumference() {
         return new Circumference();
     }
 
+    @Override
     public void resetCircumference() {
 
     }
@@ -74,22 +77,26 @@ public class Thing implements Circle, PointSet, SineWave, Sequence, Fruit, Tabby
     /* ----- PointSet ----- */
 
     // Not sure what to return
+    @Override
     public Dimension getDimensions() {
         return new Dimension();
     }
 
+    @Override
     public void resetDimentions() {
 
     }
 
     /* ----- SineWave ----- */
 
+    @Override
     public Tangent getTangent(Integer source) {
         return new Tangent();
     }
 
     /* ----- Sequence ----- */
 
+    @Override
     public void setLimit(Integer limit) {
 
     }
@@ -97,25 +104,30 @@ public class Thing implements Circle, PointSet, SineWave, Sequence, Fruit, Tabby
     /* ----- Fruit ----- */
 
     // Not sure what to return
+    @Override
     public Nutrients getNutrients() {
         return new Nutrients();
     }
 
+    @Override
     public void resetNutrients() {
 
     }
 
     // Not sure what to return
+    @Override
     public Nutrients getAntioxidants() {
         return new Nutrients();
     }
 
+    @Override
     public void resetAntioxidants() {
 
     }
 
     /* ----- TabbyCat ----- */
 
+    @Override
     public void purr() {
 
     }
@@ -158,8 +170,14 @@ public class Thing implements Circle, PointSet, SineWave, Sequence, Fruit, Tabby
 
     }
 
-    public Integer getSenseIndex(String sense) {
-        return 0;
+    /**
+     * Checks if a sense is in the sense list.
+     *
+     * @param sense The sense to find.
+     * @return true if sense is in the list, else false.
+     */
+    public Boolean getSenseIndex(String sense) {
+        return senseList.contains(sense);
     }
 
     public void removeFeeling(String feeling) {
