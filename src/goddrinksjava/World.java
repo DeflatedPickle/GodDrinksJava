@@ -1,12 +1,16 @@
 package goddrinksjava;
 
-public class World {
-    private Boolean settingGod = true;
+import java.util.ArrayList;
+import java.util.List;
 
+public class World {
+    public final List<Thing> thingList;
+
+    private Boolean settingGod = true;
     private Lovable God;
 
     public World(Integer i) {
-
+        thingList = new ArrayList<>();
     }
 
     public void addThing(Thing thing) {
@@ -15,10 +19,13 @@ public class World {
 
             settingGod = false;
         }
+
+        thingList.add(thing);
+        System.out.println(String.format("Added %s", thing.myName));
     }
 
     public void startSimulation() {
-
+        System.out.println("Starting simulation");
     }
 
     public void timeTravelForTwo(String period, Integer year, Thing first, Thing second) {
@@ -50,7 +57,8 @@ public class World {
     }
 
     public void removeThing(Thing thing) {
-
+        thingList.remove(thing);
+        System.out.println(String.format("Removed %s", thing.myName));
     }
 
     public void announce(String... s) {

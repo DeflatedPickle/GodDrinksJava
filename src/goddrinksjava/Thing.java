@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Thing implements Circle, PointSet, SineWave, Sequence, Fruit, TabbyCat {
-    private Memory memory;
+    public String myName;
 
+    private Memory memory;
     private List<String> senseList;
 
     public Thing() {
@@ -49,7 +50,12 @@ public class Thing implements Circle, PointSet, SineWave, Sequence, Fruit, Tabby
     }
 
     public void lookFor(Thing thing, World world) {
-
+        if (world.thingList.contains(thing)) {
+            System.out.println(String.format("Found %s", thing.myName));
+        }
+        else {
+            System.out.println(String.format("Could not find %s", thing.myName));
+        }
     }
 
     // Not sure what to return
@@ -129,7 +135,7 @@ public class Thing implements Circle, PointSet, SineWave, Sequence, Fruit, Tabby
 
     @Override
     public void purr() {
-
+        System.out.println("Purr");
     }
 
     /* ----- Lovable ----- */
